@@ -1,0 +1,6 @@
+.responsive-image {
+  max-width: 100%; /* Ensures the image does not exceed the container width */
+  height: auto; /* Allows the image to maintain its aspect ratio */
+  width: auto; /* Ensures the image adjusts to the container width */
+  max-height: 100vh; /* Sets the maximum height of the image to 100% of the viewport height */
+}
