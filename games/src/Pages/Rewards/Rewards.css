@@ -1,0 +1,91 @@
+@keyframes fadeInScaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .rewards-container {
+    position: absolute;
+    top: 39px;
+    left: 410.71px;
+    width: 550.9px;
+    height: 742.19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border-radius: 20px; /* Optional: Add border-radius for rounded corners */
+    padding: 20px; /* Optional: Add padding */
+    z-index: 10; /* Ensure it is above other content */
+    animation: fadeInScaleUp 0.5s ease-in-out; /* Apply animation */
+  }
+  
+  .rectangle-image {
+    position: absolute;
+    width: 283.48px;
+    height: 110.69px;
+    top: 19.56%;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .group146-image {
+    position: absolute;
+    width: 389.77px;
+    height: 483px;
+    top: 45px; /* Adjust the top value as needed to position below Rectangle144 */
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .score-text {
+    position: absolute;
+    top: 199px; /* Adjust the top value to center the text within Rectangle144 */
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: Nunito;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    z-index: 3;
+  }
+  
+  .score {
+    font-family: Nunito;
+    padding: 0;
+    font-size: 32.8px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+  }
+  
+  .group665-image {
+    position: absolute;
+    width: 189.77px;
+    height: 183px;
+    top: 260px; /* Adjust the top value as needed */
+    left: 35%;
+    transform: translateX(-50%);
+    border-radius: 21.75px 0px 0px 0px;
+    z-index: 1;
+  }
+  
+  .rewards-text {
+    position: absolute;
+    top: calc(100% - 100px); /* Adjust the top value to position it correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust font size as needed */
+    color: white;
+    z-index: 1;
+  }
+  

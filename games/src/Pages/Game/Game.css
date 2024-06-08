@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+.background-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../Images/Image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.arrow-image {
+    width: 90px;
+    height: auto;
+}
+
+.arrow:hover .arrow-image {
+    transform: scale(1.1);
+}
+
+.banana-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.banana-image {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pink-cards, .blue-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    width: calc(33.33% - 10px); /* 3 cards per row, accounting for the gap */
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:active {
+    transform: scale(0.95);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.fruit-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%; /* Maximum width to stay within the pink card */
+    max-height: 60%; /* Maximum height to stay within the pink card */
+    width: auto; /* Auto width to maintain aspect ratio */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem; /* Increase the font size of the letter */
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito', sans-serif;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #218838;
+}
+
+.score {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito', sans-serif;
+}
+
+.progress-bar-container {
+    width: 60%;
+    height: 10px; /* Set the desired height */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Ensure children elements don't overflow */
+    position: relative; /* Position relative for absolute positioning */
+    display: flex; /* Add display flex for vertical centering */
+    align-items: center; /* Vertically center the progress bar */
+}
+
+.progress-bar {
+    width: 100%; /* Start with 100% width */
+    height: 20px; /* Match the height of the container */
+    background-color: rgba(252, 228, 146, 1); /* Change progress bar color */
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px; 
+}
+
+/* Add animation for progress bar */
+@keyframes progressBarAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 10; /* Ensure it is above other content */
+}

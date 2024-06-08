@@ -1,0 +1,135 @@
+.background-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../Images/Image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.monkey-image {
+  position: absolute;
+  width: 42.98%;
+  height: auto;
+  top: 18.46%;
+  left: 30.37%;
+  border-radius: 48.49px 0px 0px 0px;
+  opacity: 1;
+}
+
+.heading {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50px;
+  left: 73.45%;
+  transform: translateX(-50%);
+  font-family: 'Nunito';
+  /* font-size: 56px; */
+  font-weight: 800;
+  line-height: 76.38px;
+  text-align: center;
+  color: rgba(17, 174, 198, 1);
+  z-index: 2;
+}
+
+.Group149 {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 73.45%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.ellipses-cogs-stars {
+  position: absolute;
+  bottom: 80px; 
+  left: 100px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 40px;
+}
+
+.ellipse308-309 {
+  margin-left: 60px;
+  display: flex;
+  bottom: 10px;
+  gap: 200px; 
+}
+.ellipse307-310 {
+  margin-right: 60px;
+  display: flex;
+  bottom: 10px;
+  gap: 150px; 
+}
+
+.ellipse308, .ellipse309, .ellipse307, .ellipse310 {
+  width: 38.92px;
+  height: 15.55px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ellipse307, .ellipse310 {
+  width: 17.3px;
+  height: 9.32px;
+}
+
+.ellipse308 {
+  top: 0px; 
+  transform: rotate(-31.61deg);
+}
+
+.ellipse309 {
+  transform: rotate(-31.61deg);
+}
+
+.ellipse307 {
+  top: 80px; 
+  left: -10px;
+  transform: rotate(-10.81deg);
+}
+
+.ellipse310 {
+  top: 80px; 
+  transform: rotate(-14.81deg);
+}
+
+.cog-star-container {
+  display: flex;
+  gap: 120px;
+  position: relative;
+}
+
+.cog, .star {
+  width: 64px;
+  height: 64px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.cog:hover, .star:hover, .button-container:hover {
+  transform: scale(1.1);
+}
+
+.star {
+  background: linear-gradient(180deg,  0%, rgba(247, 5, 223, 0) 100%);
+}
